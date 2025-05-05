@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    background-color: #1C1C1C;
+    margin: 0;
+
+
+}
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header{
+    position: relative;
+    z-index: 10;
+    padding: 25px 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+.header nav a{
+    font-style: 14px;
+    opacity: 0.7;
+    transition: all 300ms ease;
+}
+.header nav a.active{
+    opacity: 1;
+}
+.header nav a:hover{
+    opacity: 0.8;
+}
+.orderBtn{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 16px;
+    font-weight: 500;
+    width: 165px;
+    height: 50px;
+    background: #f6762c;
+    border-radius: 5px;
+    transition: 300ms ease;
+}
+.orderBtn:hover{
+    opacity: 0.8;
+}
+
+/* welcome */
+
+.welcome{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 240px 0;
+    margin-top: -100px;
+    background-image: url("images/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.welcome_text{
+    width: 550px;
+}
+
+.welcome_subtitle{
+    margin-bottom: 7px;
+    font-style: 14px;
+    letter-spacing: 0.1em;
+}
+.welcome_title{
+    font-size: 58px;
+}
+
+.welcome_desc{
+    margin: 40px 0;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+
+/* Food-list */
+
+.food-list .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    padding: 100px 0;
+}
+.food-list_card{
+    width: 260px;
+    background-color: #312F30;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.food-list_card img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    
+}
+.food-list_card:hover{
+    scale: 1.2;
+}
+.food-list_title{
+    font-style: 20px;
+    margin-bottom: 13px;
+}
+.food-list_desc{
+    opacity: 0.7;
+    font-style: 16px;
+    padding:  0 15px;
+    }
+
+    /* main_deal */
+
+.main_deal{
+    background-color: #312F30;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.main_deal .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_deal img{
+    margin-top: 100px;
+}
+.main_deal_txt{
+    width: 360px;
+    padding-left: 200px;
+}
+.main_deal_txt .name{
+    font-size: 44px;
+    margin: 0;
+    margin-top: 50px;
+}
+.main_deal_txt .desc{
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 300;
+    padding: 0;
+}
+.main_deal .price{
+    display: flex;
+    justify-content:start;
+    color: #F6762C;
+    letter-spacing: 0.2em;
+    align-items:baseline;
+}
+.main_deal .actual_price{
+    font-size: 20px;
+}
+.main_deal .old_price{
+   margin-left: 8px;
+   font-size: 16px;
+   opacity: 0.7;
+   text-decoration:line-through
+}
+
+    /* products */
+.product{
+    
+}
+.product .orderBtn{
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.product .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 150px 0;
+}
+
+.card{
+    width: 555px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .txt{
+    width: 40%;
+    
+}
+
+.dairyQueen .txt{
+    padding: 30px 0 60px 290px ;
+}
+
+.pizzaHut .txt{
+    padding: 30px 290px 60px 30px ;
+}
+.burgerKing .txt{
+    padding: 30px 0 60px 290px ;
+}
+.papa .txt{
+    padding: 30px 290px 60px 30px ;
+}
+
+.card .title{
+    font-size: 30px;
+}
+.card .desc{
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.card .price{
+    font-size: 16px;
+    color: #F6762C;
+    letter-spacing: 0.2em;
+    align-items:baseline;
+}
+.card .old_price{
+    font-size: 16px;
+    color: #F6762C;
+    letter-spacing: 0.2em;
+    align-items:baseline;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+.dairyQueen{
+    background-image: url("./images/product-1.jpg");
+    
+}
+.pizzaHut{
+    background-image: url("./images/product-2.jpg");
+}
+.burgerKing{
+    background-image: url("./images/product-3.jpg");
+}
+.papa{
+    background-image: url("./images/product-4.jpg");
+}
+
+    /* products */
+
+.feedback{
+    padding-bottom: 190px;
+}
+.feedback .container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.feedback .text{
+    text-align: center;
+    width: 360px;
+    margin-top: 100px;
+
+}
+.text img{
+    padding-bottom: 15px;
+}
+.text .main{
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 300;
+}
+.text .author{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.text .subauthor{
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+    /* download */
+
+.dl .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 500px;
+    align-items: center;
+    background-color: #312F30;
+    height: 170px;
+    margin-bottom: 100px;
+    max-width: 1920px;
+}
+.dl .txt {
+    font-size: 30px;
+}
+
+    /* footer */
+
+
+.footer{
+
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 100px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 23px;
+}
+
+.contacts .txt{
+    padding-left: 5px;
+    opacity: 0.7;
+}
+
+.footer .nav .cnt{
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.footer .nav .title{
+    margin: 0;
+    padding: 0;
+}
